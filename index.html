@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            facebook 
+        
+        </title>
+    
+        <style>
+           .postbody{
+                width:82%;
+                margin-left: 60px;
+
+           } 
+           #p{
+                
+                
+                color: white;
+                padding:10px;
+                font-size: 25px;
+                
+           } 
+           .postbody textarea{
+                overflow:hidden;
+                resize: none;
+                margin-top:200px;
+                margin-left:400px;
+                height:80px;
+                border:1px solid blue;
+                border-radius: 4px;
+                padding:10px;
+                font-size: 20px;
+                
+           } 
+           button{
+               background-color: black;
+               color:rgb(239, 239, 241);
+               height:40px;
+               font-size: 20px;
+               margin-top:20px;
+               margin-left:700px;
+               
+           }
+         body{
+            background-color:rgb(94, 9, 72);
+         }
+         .menue {
+
+            background-color:rgb(19, 12, 83); 
+            height:60px;
+         }
+         img{
+             width:50px;
+             height:60px;
+         }
+         h3{
+             color:white;
+             font-size:20px;
+         }
+         
+        </style>
+        
+    </head>
+
+    <body>
+        
+        <div class = "menue">
+            <img src = "facebook.png">
+        </div>
+        <div class="postbody"> 
+            <h3>7 Strange Questions that Help You Find Your Life Purpose– The best place to start 
+                if you’re questioning what you’re meant to be doing in this world.
+                The Most Important Question of Your Life –
+                 What is the most important question to be asking yourself? I would argue it’s this.</h3>
+            <h3>Screw Finding Your Passion – Everyone wants to find their passion these days, but what does that really mean?
+                The Four Stages of Life – We all tend to move through similar stages in our lives. Here’s a fun look at how time and experience change us.</h3>
+                <h3>Fuck Your Feelings – The best starting place to understand your emotions and your relationship to them.
+                    The 3 Levels of Self-Awareness – Are you self-aware? Are you sure? Because you’re probably not as self-aware as you think you are.</h3>
+            <p id = "p"></p>
+            <form method="post" enctype="multipart/form-data"> 
+                <textarea class="status" id = "texta" name="status" placeholder="Write your post here!" rows="4" cols="50"></textarea> 
+            
+            </div>
+            <Button onclick="return post()">Post</Button>
+    </body>
+    <script>
+         function post(){
+               var p= document.getElementById("texta").value;
+               document.getElementById("p").innerHTML = p ;
+              
+
+               
+               return false;
+              
+         }
+    </script>
+</html>
